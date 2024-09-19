@@ -27,7 +27,6 @@ struct ElsApp: App {
 
     var body: some Scene {
         WindowGroup {
-            
             ContentView()
                 .frame(width: 750, height: 500)
         }
