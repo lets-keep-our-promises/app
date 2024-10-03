@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06CAD3352CAEAD3100073F79 /* CustomText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CAD3342CAEAD3100073F79 /* CustomText.swift */; };
 		774FAD9F2C9113B000197E5F /* ElsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774FAD9E2C9113B000197E5F /* ElsApp.swift */; };
 		774FADA12C9113B000197E5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774FADA02C9113B000197E5F /* ContentView.swift */; };
 		774FADA32C9113B100197E5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 774FADA22C9113B100197E5F /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 
 /* Begin PBXFileReference section */
 		06A77E332CA9A09B00A237EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		06CAD3342CAEAD3100073F79 /* CustomText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomText.swift; sourceTree = "<group>"; };
 		774FAD9B2C9113B000197E5F /* Els.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Els.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		774FAD9E2C9113B000197E5F /* ElsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElsApp.swift; sourceTree = "<group>"; };
 		774FADA02C9113B000197E5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -27,7 +29,9 @@
 		770B60EF2C912249003942E4 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				Connect/ConnectOkView.swift,
 				Connect/ConnectView.swift,
+				DashBoard/DashBoardView.swift,
 				Login/LoginView.swift,
 				Login/LoginViewModel.swift,
 				StartView.swift,
@@ -52,6 +56,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06CAD3332CAEAD1B00073F79 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				06CAD3342CAEAD3100073F79 /* CustomText.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 		774FAD922C9113B000197E5F = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +83,7 @@
 		774FAD9D2C9113B000197E5F /* Els */ = {
 			isa = PBXGroup;
 			children = (
+				06CAD3332CAEAD1B00073F79 /* Component */,
 				06A77E332CA9A09B00A237EF /* Info.plist */,
 				069AA17A2CA428F70024FCC4 /* Model */,
 				774FADAD2C9113CB00197E5F /* View */,
@@ -166,6 +179,7 @@
 			files = (
 				774FADA12C9113B000197E5F /* ContentView.swift in Sources */,
 				774FAD9F2C9113B000197E5F /* ElsApp.swift in Sources */,
+				06CAD3352CAEAD3100073F79 /* CustomText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

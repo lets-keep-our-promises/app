@@ -9,7 +9,6 @@ import SwiftUI
 
 struct StartView: View {
     var body: some View {
-        ZStack {
             VStack {
                 Image("ELSLogo")
                     .resizable()
@@ -19,23 +18,12 @@ struct StartView: View {
                 Spacer()
                     .frame(height: 50)
                     
-                Button(
-                    action: {
-                        
-                    },
-                    label: {
-                        Text("계속하기")
-                            .frame(width: 125, height: 50)
-                            .font(.system(size: 18))
-                            .foregroundStyle(.white)
-                            .fontWeight(.bold)
-                            .background(.customLavender)
-                            .clipShape(RoundedRectangle(cornerRadius: 40))
-                    }
-                )
-                .buttonStyle(.plain)
+                NavigationLink(destination: ConnectView()){
+                    CustomText(title: "계속하기")
+                        .navigationBarBackButtonHidden()
+                }
+                .buttonStyle(PlainButtonStyle())
             }
-        }
     }
 }
 

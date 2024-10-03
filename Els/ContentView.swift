@@ -10,11 +10,12 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationStack {
-            LoginView()
+            StartView()
         }
     }
 }
 
 #Preview {
     ContentView()
+        .frame(width: 750, height: 500)
 }

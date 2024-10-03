@@ -11,7 +11,6 @@ struct ConnectView: View {
     
     var body: some View {
         VStack{
-            
             Image("AirPodsClose")
                 .resizable()
                 .scaledToFit()
@@ -27,7 +26,7 @@ struct ConnectView: View {
             Spacer()
                 .frame(height: 50)
             ScrollView {
-                VStack(){
+                VStack{
                     ForEach(bluetoothViewModel.devices, id: \.peripheral.identifier) { device in
                         if device.isAirPodsPro {
                             HStack(alignment: .center){
@@ -41,7 +40,12 @@ struct ConnectView: View {
                                 
                                 Spacer()
                             }
-                            .padding(.vertical, 5)
+                            .padding(.leading,10)
+                            .padding(.vertical, 10)
+                            .background(Color.gray.opacity(0.05))
+                            .cornerRadius(10)
+                            
+
                         }
                     }
                 }
