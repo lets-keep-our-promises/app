@@ -14,6 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06A77E332CA9A09B00A237EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		774FAD9B2C9113B000197E5F /* Els.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Els.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		774FAD9E2C9113B000197E5F /* ElsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElsApp.swift; sourceTree = "<group>"; };
 		774FADA02C9113B000197E5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,6 +27,7 @@
 		770B60EF2C912249003942E4 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				Connect/ConnectView.swift,
 				Login/LoginView.swift,
 				Login/LoginViewModel.swift,
 				StartView.swift,
@@ -35,6 +37,7 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		069AA17A2CA428F70024FCC4 /* Model */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Model; sourceTree = "<group>"; };
 		774FADAD2C9113CB00197E5F /* View */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (770B60EF2C912249003942E4 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = View; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
@@ -68,6 +71,8 @@
 		774FAD9D2C9113B000197E5F /* Els */ = {
 			isa = PBXGroup;
 			children = (
+				06A77E332CA9A09B00A237EF /* Info.plist */,
+				069AA17A2CA428F70024FCC4 /* Model */,
 				774FADAD2C9113CB00197E5F /* View */,
 				774FAD9E2C9113B000197E5F /* ElsApp.swift */,
 				774FADA02C9113B000197E5F /* ContentView.swift */,
@@ -100,6 +105,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				069AA17A2CA428F70024FCC4 /* Model */,
 			);
 			name = Els;
 			productName = Els;
@@ -296,7 +304,11 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Els/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "앱에서 주변 기기와의 연결을 위해 블루투스 권한이 필요합니다.";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "주변 블루투스 기기를 검색하고 연결하려면 권한이 필요합니다.";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -323,7 +335,11 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Els/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "앱에서 주변 기기와의 연결을 위해 블루투스 권한이 필요합니다.";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "주변 블루투스 기기를 검색하고 연결하려면 권한이 필요합니다.";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
