@@ -23,9 +23,10 @@ struct ConnectOkView: View {
             
             Spacer()
                 .frame(height: 50)
-//            NavigationLink(){
+            NavigationLink(destination: DashBoardView()){
                 CustomText(title: "확인")
-//            }
+            }
+            .buttonStyle(PlainButtonStyle())
         }
     }
 }

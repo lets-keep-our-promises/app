@@ -31,7 +31,10 @@
 			membershipExceptions = (
 				Connect/ConnectOkView.swift,
 				Connect/ConnectView.swift,
+				DashBoard/Component/DashBoard_Live.swift,
+				DashBoard/Component/DashBoard_Logo.swift,
 				DashBoard/DashBoardView.swift,
+				DashBoard/DashBoardViewModel.swift,
 				Login/LoginView.swift,
 				Login/LoginViewModel.swift,
 				StartView.swift,
@@ -323,6 +326,7 @@
 				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "주변 블루투스 기기를 검색하고 연결하려면 권한이 필요합니다.";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSMotionUsageDescription = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -354,6 +358,7 @@
 				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "주변 블루투스 기기를 검색하고 연결하려면 권한이 필요합니다.";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSMotionUsageDescription = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",

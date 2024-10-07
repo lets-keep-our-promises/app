@@ -8,16 +8,17 @@
 import SwiftUI
 
 struct DashBoardView: View {
+    @StateObject var dashBoardViewModel = DashBoardViewModel()
     var body: some View {
         HStack{
             VStack{
-                a()
-                    .frame(width: 150,height: 200)
-                    .background(Color.red)
+                DashBoard_Live(motionManager: dashBoardViewModel)
+                    .frame(width: 150,height: 210)
+                    .background(Color.white)
                     .cornerRadius(30)
                 
                 b()
-                    .frame(width: 150,height: 200)
+                    .frame(width: 150,height: 210)
                     .background(Color.blue)
                     .cornerRadius(30)
             }
@@ -29,12 +30,14 @@ struct DashBoardView: View {
                                 .frame(width: 140,height: 120)
                                 .background(Color.yellow)
                                 .cornerRadius(30)
+
                             
                             d()
                                 .frame(width: 140,height: 120)
                                 .background(Color.green)
                                 .cornerRadius(30)
                         }
+                        
                         e()
                             .frame(width: 300,height: 168)
                             .background(Color.black)
@@ -48,19 +51,19 @@ struct DashBoardView: View {
                         
                         g()
                             .frame(width: 150,height: 225)
-                            .background(Color.orange)
+                            .background(Color.red)
                             .cornerRadius(30)
                     }
                 }
                 HStack{
-                    h()
+                    DashBoard_Logo()
                         .frame(width: 150,height: 120)
-                        .background(Color.pink)
+                        .background(Color.white)
                         .cornerRadius(30)
                     
                     i()
                         .frame(width: 300,height: 120)
-                        .background(Color.teal)
+                        .background(Color.orange)
                         .cornerRadius(30)
                 }
             }
@@ -126,14 +129,6 @@ struct g : View {
     var body: some View {
         VStack{
             Text("g")
-        }
-    }
-}
-
-struct h : View {
-    var body: some View {
-        VStack{
-            Text("h")
         }
     }
 }
