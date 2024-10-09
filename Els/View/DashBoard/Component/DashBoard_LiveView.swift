@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DashBoard_Live: View {
-    @ObservedObject var motionManager: DashBoardViewModel
+    @EnvironmentObject var motionManager: DashBoardViewModel
     var body: some View {
         VStack{
             HStack{
@@ -38,7 +38,14 @@ struct DashBoard_Live: View {
             }
             .frame(height:150)
             Button(
-                action:{                motionManager.setReferenceAttitude()
+                action:{ motionManager.check() },
+                label:{
+                    Text("asdf")
+                }
+            )
+            Button(
+                action:{
+                    motionManager.setReferenceAttitude()
                 },
                 label: {
                     Text("초기화")
@@ -49,6 +56,6 @@ struct DashBoard_Live: View {
 }
 
 #Preview {
-    DashBoard_Live(motionManager: DashBoardViewModel())
+    DashBoard_Live()
         .frame(width: 150,height: 500)
 }

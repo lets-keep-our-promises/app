@@ -12,7 +12,7 @@ struct DashBoardView: View {
     var body: some View {
         HStack{
             VStack{
-                DashBoard_Live(motionManager: dashBoardViewModel)
+                DashBoard_Live()
                     .frame(width: 150,height: 210)
                     .background(Color.white)
                     .cornerRadius(30)
@@ -47,7 +47,7 @@ struct DashBoardView: View {
                         f()
                             .frame(width: 150,height: 60)
                             .background(Color.cyan)
-                            .cornerRadius(30)
+                            .cornerRadius(20)
                         
                         g()
                             .frame(width: 150,height: 225)
@@ -68,6 +68,7 @@ struct DashBoardView: View {
                 }
             }
         }
+        .environmentObject(dashBoardViewModel)
     }
 }
 
