@@ -27,7 +27,7 @@ struct ElsApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ConnectView()
+            ContentView()
                 .frame(width: 750, height: 500)
         }
         .windowStyle(HiddenTitleBarWindowStyle())

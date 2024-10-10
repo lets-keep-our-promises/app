@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		064A71452CB6507E0063405D /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 064A71442CB6507E0063405D /* SDWebImageSwiftUI */; };
+		06BC9AF32CB6C4A700DB4472 /* TimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BC9AF22CB6C4A700DB4472 /* TimeFormatter.swift */; };
+		06CAD3352CAEAD3100073F79 /* CustomText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CAD3342CAEAD3100073F79 /* CustomText.swift */; };
 		774FAD9F2C9113B000197E5F /* ElsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774FAD9E2C9113B000197E5F /* ElsApp.swift */; };
 		774FADA12C9113B000197E5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774FADA02C9113B000197E5F /* ContentView.swift */; };
 		774FADA32C9113B100197E5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 774FADA22C9113B100197E5F /* Assets.xcassets */; };
@@ -15,6 +18,8 @@
 
 /* Begin PBXFileReference section */
 		06A77E332CA9A09B00A237EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		06BC9AF22CB6C4A700DB4472 /* TimeFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatter.swift; sourceTree = "<group>"; };
+		06CAD3342CAEAD3100073F79 /* CustomText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomText.swift; sourceTree = "<group>"; };
 		774FAD9B2C9113B000197E5F /* Els.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Els.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		774FAD9E2C9113B000197E5F /* ElsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElsApp.swift; sourceTree = "<group>"; };
 		774FADA02C9113B000197E5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -27,7 +32,18 @@
 		770B60EF2C912249003942E4 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				Connect/ConnectOkView.swift,
 				Connect/ConnectView.swift,
+				DashBoard_ICT/DashBoardIctView.swift,
+				DashBoard_ICT/Logo/DashBoardIctLogo.swift,
+				DashBoard_ICT/Logo/DashBoardIctProfil.swift,
+				DashBoard/Component/DashBoard_CheckingView.swift,
+				DashBoard/Component/DashBoard_ConnectTimeView.swift,
+				DashBoard/Component/DashBoard_DailyView.swift,
+				DashBoard/Component/DashBoard_LiveView.swift,
+				DashBoard/Component/DashBoard_LogoView.swift,
+				DashBoard/DashBoardView.swift,
+				DashBoard/DashBoardViewModel.swift,
 				Login/LoginView.swift,
 				Login/LoginViewModel.swift,
 				StartView.swift,
@@ -46,12 +62,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				064A71452CB6507E0063405D /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06BC9AF02CB6C48A00DB4472 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				06BC9AF12CB6C49400DB4472 /* Extension */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		06BC9AF12CB6C49400DB4472 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				06BC9AF22CB6C4A700DB4472 /* TimeFormatter.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		06CAD3332CAEAD1B00073F79 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				06CAD3342CAEAD3100073F79 /* CustomText.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 		774FAD922C9113B000197E5F = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				06A77E332CA9A09B00A237EF /* Info.plist */,
+				06BC9AF02CB6C48A00DB4472 /* Core */,
+				06CAD3332CAEAD1B00073F79 /* Component */,
 				069AA17A2CA428F70024FCC4 /* Model */,
 				774FADAD2C9113CB00197E5F /* View */,
 				774FAD9E2C9113B000197E5F /* ElsApp.swift */,
@@ -138,6 +181,9 @@
 				Base,
 			);
 			mainGroup = 774FAD922C9113B000197E5F;
+			packageReferences = (
+				064A71432CB6507E0063405D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 774FAD9C2C9113B000197E5F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -165,7 +211,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				774FADA12C9113B000197E5F /* ContentView.swift in Sources */,
+				06BC9AF32CB6C4A700DB4472 /* TimeFormatter.swift in Sources */,
 				774FAD9F2C9113B000197E5F /* ElsApp.swift in Sources */,
+				06CAD3352CAEAD3100073F79 /* CustomText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +357,7 @@
 				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "주변 블루투스 기기를 검색하고 연결하려면 권한이 필요합니다.";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSMotionUsageDescription = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -340,6 +389,7 @@
 				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "주변 블루투스 기기를 검색하고 연결하려면 권한이 필요합니다.";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSMotionUsageDescription = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -374,6 +424,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		064A71432CB6507E0063405D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		064A71442CB6507E0063405D /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 064A71432CB6507E0063405D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 774FAD932C9113B000197E5F /* Project object */;
 }
