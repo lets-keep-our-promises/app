@@ -80,7 +80,7 @@ struct DashBoardView: View {
 struct a : View {
     var body: some View {
         VStack{
-            Text("a")
+            Text(" ")
         }
     }
 }
@@ -112,7 +112,7 @@ struct d : View {
 struct e : View {
     var body: some View {
         VStack{
-            Text("e")
+            Text(" ")
                 .foregroundStyle(.white)
         }
     }
@@ -129,7 +129,7 @@ struct f : View {
 struct g : View {
     var body: some View {
         VStack{
-            Text("g")
+            Text(" ")
         }
     }
 }

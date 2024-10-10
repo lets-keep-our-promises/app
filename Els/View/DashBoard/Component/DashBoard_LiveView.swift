@@ -11,14 +11,13 @@ struct DashBoard_Live: View {
     @EnvironmentObject var motionManager: DashBoardViewModel
     var body: some View {
         VStack{
-            HStack{
+            VStack(alignment:.leading){
                 Text("Live")
-                
-                Spacer()
-            }.padding(.leading,30)
-            HStack{
                 Text("움직임을 실시간으로 확인해요")
+                    .font(.system(size: 13,weight: .semibold))
+
             }
+            .padding(.trailing,40)
             ZStack{
                 Circle()
                     .stroke(Color.red, lineWidth: 3)
@@ -31,18 +30,12 @@ struct DashBoard_Live: View {
                     .foregroundStyle(.red)
                     .frame(width: 20,height: 300)
                     .offset(
-                        x: CGFloat((motionManager.referenceYaw  - motionManager.yaw) * 50),
+                        x: CGFloat((motionManager.referenceRoll  - motionManager.roll) * 50),
                         y: CGFloat((motionManager.referencePitch - motionManager.pitch) * 50)
                     )
                 
             }
             .frame(height:150)
-            Button(
-                action:{ motionManager.check() },
-                label:{
-                    Text("asdf")
-                }
-            )
             Button(
                 action:{
                     motionManager.setReferenceAttitude()
@@ -57,5 +50,6 @@ struct DashBoard_Live: View {
 
 #Preview {
     DashBoard_Live()
-        .frame(width: 150,height: 500)
+        .frame(width: 240,height: 220)
+        .environmentObject(DashBoardViewModel())
 }

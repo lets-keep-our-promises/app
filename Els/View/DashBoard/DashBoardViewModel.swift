@@ -12,10 +12,10 @@ class DashBoardViewModel: ObservableObject {
     private let motionManager = CMHeadphoneMotionManager()
     
     @Published var pitch: Double = 0
-    @Published var yaw: Double = 0
+    @Published var roll: Double = 0
     
     @Published var referencePitch: Double = 0
-    @Published var referenceYaw: Double = 0
+    @Published var referenceRoll: Double = 0
     
     @Published var posture = true
     @Published var isPaused = false
@@ -34,7 +34,7 @@ class DashBoardViewModel: ObservableObject {
     private var dailyResetTimer: Timer?
     
     private var lastMotionUpdateTime: Date = Date()
-    private let pauseThreshold: TimeInterval = 10.0
+    private let pauseThreshold: TimeInterval = 3.0
     
     init() {
         setupMotionManager()
@@ -47,7 +47,7 @@ class DashBoardViewModel: ObservableObject {
             motionManager.startDeviceMotionUpdates(to: .main) { [weak self] motion, error in
                 guard let self = self, let motion = motion, error == nil else { return }
                 self.pitch = motion.attitude.pitch
-                self.yaw = motion.attitude.yaw
+                self.roll = motion.attitude.roll
                 self.lastMotionUpdateTime = Date()
             }
         }
@@ -56,16 +56,16 @@ class DashBoardViewModel: ObservableObject {
     //그냥 각도 측정(디버깅용)
     func check(){
         print("Pitch: \(String(format: "%.2f", pitch))")
-        print("yaw: \(String(format: "%.2f", yaw))")
+        print("yaw: \(String(format: "%.2f", roll))")
         print("referencePitch: \(String(format: "%.2f", referencePitch))")
-        print("referenceYaw: \(String(format: "%.2f", referenceYaw))")
+        print("referenceRoll: \(String(format: "%.2f", referenceRoll))")
     }
     
     //원의 중심점으로 맞추는 코드
     func setReferenceAttitude() {
         print("재설정")
         referencePitch = pitch
-        referenceYaw = yaw
+        referenceRoll = roll
     }
     
     //타이머 정지
@@ -79,9 +79,9 @@ class DashBoardViewModel: ObservableObject {
 extension DashBoardViewModel {
     func isAbnormalPosture() -> Bool {
         let pitchDiff = abs(pitch - referencePitch)
-        let yawDiff = abs(yaw - referenceYaw)
+        let rollDiff = abs(roll - referenceRoll)
         
-        return pitchDiff > 0.26 || yawDiff > 0.26
+        return pitchDiff > 0.3 || rollDiff > 0.3
     }
     
     //0.5초마다 자세를 측정하여 만약 비정상 자세가 감지된다면 print("비정상 자세 감지됨!")을 보내주는 코드
