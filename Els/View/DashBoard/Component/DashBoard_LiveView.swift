@@ -13,9 +13,11 @@ struct DashBoard_Live: View {
         VStack{
             VStack(alignment:.leading){
                 Text("Live")
+                    .font(.title)
+                    .fontWeight(.bold)
                 Text("움직임을 실시간으로 확인해요")
-                    .font(.system(size: 13,weight: .semibold))
-
+                    .font(.system(size: 14, weight: .medium))
+                    .foregroundStyle(.gray)
             }
             .padding(.trailing,40)
             ZStack{
@@ -28,7 +30,7 @@ struct DashBoard_Live: View {
                         x: 1, y: 1)
                 Circle()
                     .foregroundStyle(.red)
-                    .frame(width: 20,height: 300)
+                    .frame(width: 15)
                     .offset(
                         x: CGFloat((motionManager.referenceRoll  - motionManager.roll) * 50),
                         y: CGFloat((motionManager.referencePitch - motionManager.pitch) * 50)
@@ -42,14 +44,21 @@ struct DashBoard_Live: View {
                 },
                 label: {
                     Text("초기화")
+                        .padding()
+                        .font(.system(size: 15,weight: .semibold))
+                        .foregroundStyle(.white)
+                        .frame(width: 150, height: 40)
+                        .background(Color.red)
+                        .clipShape(RoundedRectangle(cornerRadius: 15))
                 }
             )
+            .buttonStyle(PlainButtonStyle())
         }
     }
 }
 
 #Preview {
     DashBoard_Live()
-        .frame(width: 240,height: 220)
+        .frame(width: 240,height: 340)
         .environmentObject(DashBoardViewModel())
 }

@@ -34,6 +34,7 @@
 			membershipExceptions = (
 				Connect/ConnectOkView.swift,
 				Connect/ConnectView.swift,
+				DashBoard_ICT/DashBoard_CharacterView.swift,
 				DashBoard_ICT/DashBoardIctView.swift,
 				DashBoard_ICT/Logo/DashBoardIctLogo.swift,
 				DashBoard_ICT/Logo/DashBoardIctProfil.swift,
