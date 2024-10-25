@@ -38,7 +38,7 @@ fileprivate struct DashBoardCheckOK: View {
                     Spacer()
                         .frame(width: 47)
                     
-                    Text("에요.")
+                    Text("예요.")
                         .fontWeight(.semibold)
                 }
             }

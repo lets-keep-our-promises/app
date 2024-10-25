@@ -20,8 +20,8 @@ struct DashBoard_ConnectTimeView: View {
 }
 
 fileprivate struct AirPodsConnectNoView: View {
-    var customRed = Color(red:255/255, green:230/255, blue:230/255)
-    var customRed1 = Color(red:255/255, green:220/255, blue:220/255)
+    var customRed = Color(red:255/255, green:240/255, blue:240/255)
+    var customRed1 = Color(red:255/255, green:230/255, blue:230/255)
     var body: some View{
         ZStack{
             customRed
