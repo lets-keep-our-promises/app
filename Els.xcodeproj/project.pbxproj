@@ -43,6 +43,7 @@
 				DashBoard/Component/DashBoard_DailyView.swift,
 				DashBoard/Component/DashBoard_LiveView.swift,
 				DashBoard/Component/DashBoard_LogoView.swift,
+				DashBoard/Component/DashBoardChartView.swift,
 				DashBoard/DashBoardView.swift,
 				DashBoard/DashBoardViewModel.swift,
 				Login/LoginView.swift,
