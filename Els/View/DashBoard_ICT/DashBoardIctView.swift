@@ -16,7 +16,7 @@ struct DashBoardIctView: View {
             HStack{
                 VStack{
                     HStack{
-                        a()
+                        DashBoard_CharacterView()
                             .frame(width: 210,height: 140)
                             .background(Color.white)
                             .cornerRadius(30)
@@ -40,7 +40,7 @@ struct DashBoardIctView: View {
                     }
                     
                     Spacer()
-                        .frame(height: 20)
+                        .frame(height: 10)
                     
                     DashBoard_DailyView()
                         .frame(width: 430,height: 140)
@@ -55,13 +55,8 @@ struct DashBoardIctView: View {
                         .background()
                         .cornerRadius(30)
                     
-                    g()
-                        .frame(width: 240,height: 120)
-                        .background(Color.white)
-                        .cornerRadius(30)
-                    
                     DashBoard_Live()
-                        .frame(width: 240,height: 220)
+                        .frame(width: 240,height: 340)
                         .background(Color.white)
                         .cornerRadius(30)
                 }

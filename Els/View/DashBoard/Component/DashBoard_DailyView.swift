@@ -21,7 +21,7 @@ struct DashBoard_DailyView: View {
             }
             
             Spacer()
-                .frame(height: 10)
+                .frame(height: 5)
             
             HStack{
                 TimeDisplayItemView(title: "MacBook",time: motionManager.formattedTotalTime, endTitle: "동안 사용함")
@@ -50,7 +50,7 @@ fileprivate struct TimeDisplayItemView: View {
     
     init(
         title: String = "MacBook",
-        time: String = "04H 30M",
+        time: String = "00:00",
         endTitle: String = "동안 사용함"
     ) {
         self.title = title
@@ -61,12 +61,12 @@ fileprivate struct TimeDisplayItemView: View {
         VStack(alignment:.leading){
             Text(title)
                 .font(.system(size: 10,weight: .semibold))
-            Spacer()
-                .frame(height: 10)
+//            Spacer()
+//                .frame(height: 2)
             Text(time)
-                .font(.system(size: 20,weight: .bold))
-            Spacer()
-                .frame(height: 10)
+                .font(.system(size: 34,weight: .bold))
+//            Spacer()
+//                .frame(height: 2)
             HStack{
                 Spacer()
                 Text(endTitle)

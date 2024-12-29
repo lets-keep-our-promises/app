@@ -9,9 +9,12 @@ struct ElsApp: App {
                 Color.white
                     .edgesIgnoringSafeArea(.all) // Ensure it covers the entire screen
                 
-                DashBoardIctView() // Your dashboard view
+//                DashBoardIctView() // Your dashboard view
+//                    .frame(width: 750, height: 500)
+//                    .padding(.bottom,
+                ContentView()
                     .frame(width: 750, height: 500)
-                    .padding(.bottom,25)
+                    .padding(.bottom)
             }
         }
         .windowStyle(HiddenTitleBarWindowStyle())

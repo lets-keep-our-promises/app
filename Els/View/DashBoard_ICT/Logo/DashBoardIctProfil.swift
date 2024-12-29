@@ -14,10 +14,6 @@ struct DashBoardIctProfil: View {
                 Image("SchoolLogo")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 50)
-                
-                Circle()
-                    .stroke(lineWidth: 2)
                     .frame(width: 60)
             }
             

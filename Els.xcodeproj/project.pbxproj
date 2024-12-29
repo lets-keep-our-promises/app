@@ -34,6 +34,7 @@
 			membershipExceptions = (
 				Connect/ConnectOkView.swift,
 				Connect/ConnectView.swift,
+				DashBoard_ICT/DashBoard_CharacterView.swift,
 				DashBoard_ICT/DashBoardIctView.swift,
 				DashBoard_ICT/Logo/DashBoardIctLogo.swift,
 				DashBoard_ICT/Logo/DashBoardIctProfil.swift,
@@ -42,6 +43,7 @@
 				DashBoard/Component/DashBoard_DailyView.swift,
 				DashBoard/Component/DashBoard_LiveView.swift,
 				DashBoard/Component/DashBoard_LogoView.swift,
+				DashBoard/Component/DashBoardChartView.swift,
 				DashBoard/DashBoardView.swift,
 				DashBoard/DashBoardViewModel.swift,
 				Login/LoginView.swift,
@@ -348,7 +350,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Els/Preview Content\"";
-				DEVELOPMENT_TEAM = 72N6BJ6U9G;
+				DEVELOPMENT_TEAM = N783J9CB2J;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -380,7 +382,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Els/Preview Content\"";
-				DEVELOPMENT_TEAM = 72N6BJ6U9G;
+				DEVELOPMENT_TEAM = N783J9CB2J;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

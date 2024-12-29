@@ -11,6 +11,6 @@ class TimeFormatter {
     static func formattedtime(from time: Double) -> String {
         let hours = Int(time) / 3600
         let minutes = (Int(time) % 3600) / 60
-        return String(format: "%02dH %02dM", hours, minutes)
+        return String(format: "%02d:%02d", hours, minutes)
     }
 }
